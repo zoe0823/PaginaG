@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi amor ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Lluvia de corazones de fondo -->
+    <div class="decoracion-corazones">
+        <span>❤️</span><span>💖</span><span>❤️</span><span>💕</span><span>❤️</span>
+        <span>💖</span><span>❤️</span><span>💕</span><span>❤️</span><span>💖</span>
+    </div>
+
+    <!-- Contenedor Principal -->
+    <div class="carta-contenedor">
+        <div class="icono-corazon">❤️</div>
+        <h1>¡Holi, mi niño! ✨</h1>
+        
+        <p class="mensaje">
+            Con este detalle espero sacarte una sonrisa, tal vez no sea la gran cosa pero le puse mucho amor :3 
+        </p>
+
+        <p class="frase-destacada">"Eres lo mejor que me ha pasado en mi vida."</p>
+
+        <!-- Botón interactivo -->
+        <button class="boton-amor" onclick="mostrarSorpresa()">Haz clic aquí 🎁</button>
+        
+        <p id="mensaje-oculto" class="oculto">
+            En este espacio queria decirte que desde que te conoci no dejo de pensar en ti, me gusta estar contigo y me encanta poder llamarte mi amor, gracias por permitirme estar en tu vida y darme la oportunidad de poder ser tu novia, prometo hacerte el chico mas feliz ¡¡Te amo!!. 📜🌹<br>
+            <strong>¿Jugamos a cortar papas de nuevo mas tarde? jaja </strong>
+        </p>
+    </div>
+
+    <!-- Script simple para el botón -->
+    <script>
+        function mostrarSorpresa() {
+            const mensaje = document.getElementById('mensaje-oculto');
+            mensaje.classList.toggle('mostrar');
+        }
+    </script>
+</body>
+</html>
